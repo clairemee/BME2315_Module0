@@ -110,8 +110,8 @@ def sum_odd_fib(limit): # should be returning the sum of odd numbers
     a, b = 0, 1
     total = 0
     while b <= limit:
-        if b % 2 != 0:  # This line checks if the Fibonacci number is odd
-            total += b
+        if b % 2 != 0:  # This line checks if the Fibonacci number is odd (changed from even to odd)
+            total += b # changed to +=
         a, b = b, a + b
     return total
 
